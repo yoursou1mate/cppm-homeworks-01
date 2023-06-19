@@ -36,7 +36,7 @@ int main(int argc, const char * argv[]) {
     
     std::ofstream fout2("out.txt");
     fout2 << m;
-    int temp1 = arr2[5];
+    int temp1 = arr2[m-1];
     fout2 << temp1 << " ";
     for (int j = 0; j<m-1; ++j){
         fout2 << arr2[j] << " ";
