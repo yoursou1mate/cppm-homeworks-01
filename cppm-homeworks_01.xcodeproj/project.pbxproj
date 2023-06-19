@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0089C4882A3E085F00851FD8 /* in.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = in.txt; sourceTree = "<group>"; };
 		00D9F85B2A362AE400227B1B /* cppm-homeworks_01 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "cppm-homeworks_01"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00D9F85E2A362AE400227B1B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,6 +58,7 @@
 		00D9F85D2A362AE400227B1B /* cppm-homeworks_01 */ = {
 			isa = PBXGroup;
 			children = (
+				0089C4882A3E085F00851FD8 /* in.txt */,
 				00D9F85E2A362AE400227B1B /* main.cpp */,
 			);
 			path = "cppm-homeworks_01";

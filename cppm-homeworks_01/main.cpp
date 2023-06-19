@@ -8,23 +8,15 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include "in.txt"
+
 
 
 
 
 int main(int argc, const char * argv[]) {
 
-    const int n = 5;
-    const int m = 6;
-    
-    int arr1[n] = {1,2,3,4,5};
-    int arr2[m] = {10,20,30,40,50,60};
-    
-    std::ofstream fout("in.txt");
-    fout << arr1;
-    fout << arr2;
-
-    
+   
     
     std::ifstream fin("in.txt");
    
@@ -51,11 +43,11 @@ int main(int argc, const char * argv[]) {
     }
     
     fout2 << n;
-    int temp2 = arr1[4];
-    fout2 << temp2 << " ";
-    for (int i = 0; i<n-1; ++i){
+    int temp2 = arr1[0];
+    for (int i = 1; i<n; ++i){
         fout2 << arr1[i] << " ";
     }
+    fout2 << temp2;
     
     std::cout << m << '\n';
     std::cout << temp1 << " ";
@@ -66,12 +58,17 @@ int main(int argc, const char * argv[]) {
     std::cout << '\n';
     
     std::cout << n << '\n';
-    std::cout << temp2 << " ";
-    for (int i = 0; i<n-1; ++i){
+    for (int i = 1; i<n; ++i){
         std::cout << arr1[i] << " ";
     }
+    std::cout << temp2;
 
     std::cout << std::endl;
     
+    
+    
+    
+    delete []  arr1;
+    delete []  arr2;
     return 0;
 }
